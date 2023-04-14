@@ -33,7 +33,7 @@ command(){
 			level waittill("say", message, player);
 			message = toLower(message);
 			if(message == "staffhelper"){
-				player.activeHelper = abs(player.activeHelper - 1);
+				player.activeHelper = -player.activeHelper;
 				level notify("helpertoggle", player);
 			}
 		}
